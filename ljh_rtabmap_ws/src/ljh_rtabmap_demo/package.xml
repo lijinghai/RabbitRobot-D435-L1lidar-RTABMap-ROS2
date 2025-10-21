@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>ljh_rtabmap_demo</name>
+  <version>0.0.1</version>
+  <description>
+    RTAB-Map demo integrating RealSense D435 and LiDAR (L1) sensors in ROS 2.
+  </description>
+
+  <maintainer email="lijinghailjh@163.com">Li Jinghai</maintainer>
+  <license>MIT</license>
+
+  <!-- 依赖声明 -->
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <!-- RTAB-Map 功能依赖 -->
+  <depend>rtabmap_ros</depend>
+  <depend>rtabmap_slam</depend>
+  <depend>rtabmap_odom</depend>
+  <depend>rtabmap_viz</depend>
+
+  <!-- RealSense 相机驱动 -->
+  <depend>realsense2_camera</depend>
+
+  <!-- IMU 滤波 -->
+  <depend>imu_filter_madgwick</depend>
+
+  <!-- ROS 2 基础包 -->
+  <depend>rclcpp</depend>
+  <depend>sensor_msgs</depend>
+  <depend>std_msgs</depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
