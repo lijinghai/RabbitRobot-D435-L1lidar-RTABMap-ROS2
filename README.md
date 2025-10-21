@@ -12,8 +12,8 @@
 >
 > &emsp;&emsp;This project integrates LiDAR (Unitree L1), RGB-D camera (Intel RealSense D435), and IMU (MPU6050) to achieve 3D mapping and autonomous navigation for mobile robots.
 > &emsp;&emsp;Using FAST-LIO2 and RTAB-Map, the system fuses geometric, visual, and inertial information to provide robust localization and environmental understanding even in complex scenarios, offering a reliable platform for multi-sensor SLAM research and intelligent robotics.
->
-> ![image-20251021210657601](./README.assets/image-20251021210657601.png)
+
+![image-20251021210657601](./README.assets/image-20251021210657601.png)
 
 # 一、创建RTABMap工作目录
 
