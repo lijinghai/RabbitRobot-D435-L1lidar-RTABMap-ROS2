@@ -46,6 +46,10 @@ def generate_launch_description():
         # 是否启用近似时间同步
         # 若 CPU 性能较弱，可设置 True（但建图精度略降）
         'approx_sync': False,
+
+        # 是否总是处理最新帧（设为 false 可减少时间戳警告）
+        # 当处理速度跟不上数据流时，设为 false 可避免丢弃数据警告
+        'always_process_most_recent_frame': False,
     }]
 
     # ============================================================

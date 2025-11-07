@@ -17,4 +17,14 @@ install(DIRECTORY launch
   DESTINATION share/${PROJECT_NAME}/
 )
 
+# 安装 rviz 配置
+install(DIRECTORY rviz
+  DESTINATION share/${PROJECT_NAME}/
+)
+
+# 安装 config 配置
+install(DIRECTORY config
+  DESTINATION share/${PROJECT_NAME}/
+)
+
 ament_package()
