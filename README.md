@@ -6,6 +6,7 @@
   RTAB-Map 融合 LiDAR 与双目相机的建图导航
 </h3>
 
+
 > [!note]
 >
 > &emsp;&emsp;本项目基于 LiDAR、RGB-D 相机与 IMU 的多模态融合技术，为实现了移动小车的 三维建图与自主导航为目标。系统采用 Unitree L1 激光雷达 提供高精度几何结构信息，结合 Intel RealSense D435 相机 提供彩色与深度数据，并融合 MPU6050 惯性测量单元 (IMU) 实现姿态与运动状态的补偿与优化。
@@ -714,4 +715,17 @@ def generate_launch_description() -> LaunchDescription:
 > MPU6050 接入ROS2 请看 https://github.com/lijinghai/RabbitRobot-JetsonOrinSuper_MPU6050-ROS2
 
 
+---
 
+## 📊 Star 历史
+
+[![Star History Chart](https://api.star-history.com/svg?repos=lijinghai/RabbitRobot-D435-L1lidar-RTABMap-ROS2&type=Date)](https://star-history.com/#lijinghai/RabbitRobot-D435-L1lidar-RTABMap-ROS2&Date)
+
+---
+<div align="center">
+
+## 算个文科生吧
+
+**Made with ❤️ for Robotics**
+
+</div>
