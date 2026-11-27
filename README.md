@@ -20,7 +20,7 @@
 # 一、创建RTABMap工作目录
 
 ```bash
-sudo mkidr -p ljh_rtabmap_ws/src
+mkdir -p ljh_rtabmap_ws/src
 cd ljh_rtabmap_ws/src
 git clone -b humble-devel https://github.com/introlab/rtabmap.git
 git clone -b humble-devel https://github.com/introlab/rtabmap_ros.git
@@ -29,6 +29,8 @@ rosdep install --from-paths src --ignore-src -r -y
 colcon build --symlink-install --parallel-workers 1 --cmake-args -DCMAKE_BUILD_TYPE=Release -Wno-dev
 source install/setup.bash
 ```
+
+> 2026-11-27 验证记录：在 Ubuntu 22.04 的 ROS 2 Humble 环境中，用普通用户从空目录执行前两条命令成功，重复执行也能进入 `ljh_rtabmap_ws/src`。本次仅验证目录准备步骤。
 
 ## 1.1 编译安装
 
